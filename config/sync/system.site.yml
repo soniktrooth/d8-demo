@@ -1,0 +1,14 @@
+uuid: 29f4fbf4-a86a-4aa4-9d06-9b25ccb0d74f
+name: 'Drupal 8'
+mail: josh@kalamuna.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

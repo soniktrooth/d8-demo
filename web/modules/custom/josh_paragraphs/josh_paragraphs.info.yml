@@ -1,0 +1,7 @@
+name: Josh's Paragraphs Customisations
+type: module
+description: Customisations for Paragraphs and Kalagraphs functionality by Josh
+core: 8.x
+package: Josh
+dependencies:
+  - kalagraphs
