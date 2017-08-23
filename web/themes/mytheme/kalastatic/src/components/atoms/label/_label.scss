@@ -1,0 +1,11 @@
+.label {
+  font-size: .875em;
+  text-transform: uppercase;
+  color: $gray-dark;
+  margin-bottom: 0.5em;
+
+  &.inline {
+    display: inline-block;
+    margin-right: 0.5em;
+  }
+}

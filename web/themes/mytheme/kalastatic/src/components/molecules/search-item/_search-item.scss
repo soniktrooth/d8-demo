@@ -1,0 +1,23 @@
+/*
+Search Item
+
+A single search result.
+
+Markup: search-item.html.twig
+
+Styleguide sod-content.share-links
+*/
+%search-item {
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: $gray-light;
+  border-bottom: 1px solid $c__teal;
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.search-item {
+  @extend %search-item;
+}

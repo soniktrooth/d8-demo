@@ -1,0 +1,115 @@
+/*
+Faculty Profile full
+
+A profile component for displaying faculty.
+
+Markup: profile--faculty--full.html.twig
+
+Styleguide sod-content.profile--faculty--full
+*/
+
+%profile--faculty--full {
+  @extend %layout--4-8;
+
+  img {
+    @extend .img-responsive;
+    width: 100%;
+  }
+
+  .profile--faculty__programs {
+    margin-top: 2em;
+
+    a {
+      display: list-item;
+      margin-left: 1.5em;
+    }
+  }
+
+  .profile--faculty__content {
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  h2,
+  .profile--faculty__titles {
+    margin-bottom: 0.3em;
+  }
+
+  .profile--faculty__dept,
+  .profile--faculty__education,
+  .profile--faculty__awards,
+  .profile--faculty__programs {
+    margin-bottom: 1em;
+
+    .field__label {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .profile--faculty__titles,
+  .profile--faculty__dept {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .profile--faculty__bio {
+    margin-bottom: 3em;
+  }
+
+  .profile--faculty__education,
+  .profile--faculty__awards {
+    margin-bottom: 2em;
+
+    ul {
+      padding: 0;
+      list-style: none;
+
+      li {
+        display: flex;
+
+        &:nth-child(odd) {
+          background-color: #eee;
+        }
+
+        div {
+          padding: 0.5em;
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+
+  .profile--faculty__education {
+    ul {
+      li {
+        div {
+          width: 25%;
+
+          &:nth-child(2) {
+            width: 5%
+          }
+
+          &:last-child {
+            width: 2%
+          }
+        }
+      }
+    }
+  }
+
+  .profile--faculty__awards {
+    ul {
+      li {
+        div {
+          width: 20%;
+        }
+      }
+    }
+  }
+
+}
+
+.profile--faculty--full {
+  @extend %profile--faculty--full;
+}

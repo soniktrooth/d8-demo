@@ -1,0 +1,46 @@
+{
+  "secondary": {
+    "items": {
+      "1": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 1",
+        "url": "#",
+        "below": []
+      },
+      "2": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 2",
+        "url": "#",
+        "below": []
+      },
+      "3": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 3",
+        "url": "#",
+        "below": []
+      },
+      "4": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 4",
+        "url": "#",
+        "below": []
+      }
+    },
+    "attributes": {
+      "id": "nav--secondary",
+      "class": []
+    }
+  }
+}

@@ -1,0 +1,6 @@
+---
+source: node_modules/jquery-match-height/
+destination: vendor/matchheight
+---
+
+Bring in matchheight into vendor dir

@@ -1,0 +1,21 @@
+uuid: c01928ed-a878-4626-abfa-a15ae44fa238
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+_core:
+  default_config_hash: wX-qc-DNISM9iqUZIc6O0NsyiZEB4Jib_xlH-vbDpiw
+id: paragraph.field_kalagraphs_links
+field_name: field_kalagraphs_links
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

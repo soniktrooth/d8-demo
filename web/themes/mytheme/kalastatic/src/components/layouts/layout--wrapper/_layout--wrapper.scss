@@ -1,0 +1,19 @@
+%layout--wrapper {
+  > div {
+    @extend .container;
+    width: 100%;
+    max-width: $screen-lg;
+
+    > div {
+      @extend .row;
+    }
+  }
+}
+
+.layout-content {
+  @extend .clearfix;
+}
+
+.layout--wrapper {
+  @extend %layout--wrapper;
+}

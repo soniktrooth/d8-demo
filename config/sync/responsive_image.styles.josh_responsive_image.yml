@@ -1,0 +1,25 @@
+uuid: 745bcb67-0d50-4664-9369-6cf17d693918
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.max_1300x1300
+    - image.style.max_2600x2600
+  theme:
+    - seven
+id: josh_responsive_image
+label: 'Josh responsive image'
+image_style_mappings:
+  -
+    breakpoint_id: seven.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_1300x1300
+  -
+    breakpoint_id: seven.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large
+breakpoint_group: seven
+fallback_image_style: max_2600x2600

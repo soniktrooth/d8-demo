@@ -1,0 +1,9 @@
+uuid: 1cf5ef73-15ab-45bc-b7ac-d344a0065ff6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rU-88rnOyovOg3nBPH8XCIvjU1i0dI44RsVazwPe3nA
+id: kalagraphs_component
+label: Component
+behavior_plugins: {  }

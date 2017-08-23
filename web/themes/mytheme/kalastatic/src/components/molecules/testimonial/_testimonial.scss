@@ -1,0 +1,107 @@
+/*
+Testimonial
+
+A student testimonial
+
+Markup: testimonial.html.twig
+
+Styleguide sod-content.testimonial
+
+*/
+
+%testimonial {
+  @extend %callout;
+  max-width: 100%;
+
+  .callout__wrapper {
+    padding: 0;
+    height: 100%;
+  }
+
+  .quote {
+    margin-bottom: 0;
+    padding: 1em 1.125em 0.75em 1.125em;
+
+    p {
+      position: relative;
+
+      &::before,
+      &::after {
+        font-size: 1.75em;
+      }
+
+      &::before {
+        position: absolute;
+        content: "“";
+        left: -0.5em;
+        top: -0.25em
+      }
+
+      &::after {
+        position: relative;
+        content: "”";
+        line-height: 0;
+        top: 0.25em;
+        margin-left: 0em;
+        display: inline-block;
+      }
+    }
+  }
+
+  .attribution {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-family: $font-family-base;
+    font-weight: 600;
+    padding-left: 1.75em;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: $screen-xs) {
+    .testimonial__content {
+      float: left;
+      max-width: 80%;
+    }
+
+    img {
+      float: right;
+      width: 20%;
+      height: auto;
+    }
+  }
+
+  @media (min-width: $screen-sm) {
+    .testimonial__content {
+      float: left;
+      max-width: 60%;
+    }
+
+    img {
+      float: right;
+      width: 30%;
+      height: auto;
+    }
+  }
+
+  @media (min-width: $screen-sm) {
+    overflow: hidden;
+  }
+
+  @media (min-width: $screen-xl) {
+    overflow: hidden;
+
+    .callout__wrapper {
+      max-width: $screen-lg;
+      margin: 0 auto;
+    }
+  }
+}
+
+.testimonial {
+  @extend %testimonial;
+}

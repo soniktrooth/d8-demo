@@ -1,0 +1,5 @@
+{
+  "primary": "@kalastatic/components/molecules/nav--primary/nav--primary.html.json",
+  "secondary": "@kalastatic/components/molecules/nav--secondary/nav--secondary.html.json",
+  "footer": "@kalastatic/components/molecules/nav--footer/nav--footer.html.json"
+}

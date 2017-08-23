@@ -1,0 +1,11 @@
+%section {
+  > .container {
+    > div {
+      @extend .row;
+    }
+  }
+}
+
+main section {
+  @extend %section;
+}

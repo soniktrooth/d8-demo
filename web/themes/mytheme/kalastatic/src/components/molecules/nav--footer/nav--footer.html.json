@@ -1,0 +1,117 @@
+{
+  "footer": {
+    "items": {
+      "1": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 1",
+        "url": "#",
+        "below": {}
+      },
+      "2": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 2",
+        "url": "#",
+        "below": []
+      },
+      "3": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 3",
+        "url": "#",
+        "below": []
+      },
+      "4": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 4",
+        "url": "#",
+        "below": []
+      },
+      "5": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 5",
+        "url": "#",
+        "below": []
+      },
+      "6": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 6",
+        "url": "#",
+        "below": []
+      },
+      "7": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 7",
+        "url": "#",
+        "below": []
+      },
+      "8": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 8",
+        "url": "#",
+        "below": []
+      },
+      "9": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 9",
+        "url": "#",
+        "below": []
+      },
+      "10`": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 10",
+        "url": "#",
+        "below": []
+      },
+      "11": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 11",
+        "url": "#",
+        "below": []
+      },
+      "12": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Item 12",
+        "url": "#",
+        "below": []
+      }
+    },
+    "attributes": {
+      "class": []
+    }
+  }
+}

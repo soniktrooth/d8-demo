@@ -1,0 +1,56 @@
+{
+  "primary": {
+    "items": {
+      "1": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Nav Item 1",
+        "url": "#",
+        "class": [ "active" ],
+        "below": {}
+      },
+      "2": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Nav Item 2",
+        "url": "admissions.html",
+        "below": []
+      },
+      "3": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Nav Item 3",
+        "url": "#",
+        "below": []
+      },
+      "4": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Nav Item 4",
+        "url": "#",
+        "below": []
+      },
+      "5": {
+        "is_expanded": false,
+        "is_collapsed": false,
+        "in_active_trail": false,
+        "attributes": [],
+        "title": "Nav Item 5",
+        "url": "#",
+        "below": []
+      }
+    },
+    "attributes": {
+      "id": "nav--primary",
+      "class": []
+    }
+  }
+}

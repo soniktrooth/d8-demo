@@ -1,0 +1,6 @@
+---
+source: node_modules/jquery-once/
+destination: vendor/jquery-once
+---
+
+Bring in jquery.once into vendor dir

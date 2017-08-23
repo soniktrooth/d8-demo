@@ -1,0 +1,17 @@
+
+styles:
+   version: 1.x
+   css:
+     theme:
+       ../../kalastatic/styles/main.css: {}
+
+scripts:
+  version: 1.x
+  js:
+    ../../kalastatic/js/main.js: {}
+    ../../kalastatic/vendor/bootstrap/bootstrap.min.js: {}
+    ../../kalastatic/vendor/matchheight/dist/jquery.matchHeight-min.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once

@@ -1,0 +1,15 @@
+%layout--1-up {
+  @extend %layout--wrapper;
+
+  > div {
+    > div {
+      > * {
+        @extend .col-xs-12;
+      }
+    }
+  }
+}
+
+.layout--1-up {
+  @extend %layout--1-up;
+}

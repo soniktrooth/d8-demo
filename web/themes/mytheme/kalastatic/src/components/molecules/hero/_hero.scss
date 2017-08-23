@@ -1,0 +1,91 @@
+/*
+Hero
+
+UCSF Standard hero.
+
+Markup: hero.html.twig
+
+Styleguide sod-content.hero
+*/
+
+%hero {
+  position: relative;
+  margin-bottom: 2em;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: $screen-lg;
+
+  img {
+    @extend .img-responsive;
+    width: 100%;
+  }
+
+  .hero__title {
+    margin-bottom: 0.2em !important;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: $font-size-h2;
+  }
+
+  .hero__subtitle {
+    font-family: $font-family-serif;
+    font-size: $font-size-h3;
+    font-weight: 600;
+  }
+
+  .hero__text {
+    margin-top: 0.5em;
+  }
+
+  .button,
+  .btn {
+    border-color: $c__white !important;
+    color: $c__white !important;
+    background-color: transparent !important;
+    transition-duration: 0.1875s;
+    margin-top: 2rem;
+    text-align: center;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $c__white !important;
+      color: $brand-primary !important;
+      border-color: $brand-primary;
+    }
+  }
+
+  .content {
+    @extend %tout;
+    background-color: $brand-primary;
+    padding: 3rem;
+    padding-bottom: 2rem;
+
+    @media(min-width: $screen-sm) {
+      width: 90%;
+      max-width: 38rem;
+      position: absolute;
+      top: 9rem;
+      right: 0;
+    }
+
+    @media(min-width: $screen-md) {
+      width: 70%;
+      max-width: 33rem;
+    }
+
+    @media(min-width: $screen-lg) {
+      width: 50%;
+      max-width: 34em;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 200;
+    }
+  }
+}
+
+.hero {
+  @extend %hero;
+}

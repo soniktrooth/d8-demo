@@ -1,0 +1,16 @@
+{% if srcset is defined %}
+  <picture class="img">
+    {% for bp, multipliers in srcset %}
+      <source srcset="
+        {% for multiplier, uri in multipliers %}
+          {{ uri }} {{ multiplier }}{% if not loop.last %}, {% endif %}
+        {% endfor %}
+      " media="{{ bp }}">
+    {% endfor %}
+    {% include "@kalastatic/components/atoms/image/image.html.twig" %}
+  </picture>
+{% elseif uri is defined %}
+  {% set ext = uri|split('.')|last %}
+  {% set class = class|default([])|merge([ext]) %}
+  {% include "@kalastatic/components/atoms/image/image.html.twig" %}
+{% endif %}

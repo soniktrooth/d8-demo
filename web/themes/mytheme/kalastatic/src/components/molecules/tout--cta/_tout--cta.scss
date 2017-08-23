@@ -1,0 +1,42 @@
+/**
+ * CTA Tout
+ *
+ * A tout with a button.
+ *
+ * Markup: tout--cta.html.twig
+ *
+ * Styleguide: sod-content.tout--cta
+ */
+
+%tout--cta {
+  @extend %tout;
+
+  .tout__wrapper {
+    background-color: $c__blue;
+  }
+
+  .tout__title {
+    font-family: "Helvetica Neue LT W01_41488878" !important;
+    font-size: 1.25em;
+  }
+
+  .content__wrapper {
+    padding: 1.5em;
+    padding-top: 2em;
+
+    > a {
+      @extend %button--alt;
+    }
+  }
+
+  .image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.tout--cta {
+ @extend %tout--cta;
+}

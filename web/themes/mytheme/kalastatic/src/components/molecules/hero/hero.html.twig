@@ -1,0 +1,27 @@
+<div class="hero">
+  {% if drupal is defined %}
+    {{ image }}
+  {% else %}
+    {% include "@atoms/picture/picture.html.twig" with picture only %}
+  {% endif %}
+  <div class="content">
+    <h3 class="hero__title">
+      {{ title }}
+    </h3>
+    {% if subtitle %}
+      <div class="hero__subtitle">
+        {{ subtitle }}
+      </div>
+    {% endif %}
+    {% if text %}
+      <div class="hero__text">
+        {{ text }}
+      </div>
+    {% endif %}
+    {% if drupal is defined %}
+      {{ links|first }}
+    {% else %}
+      {% include "@atoms/link/link.html.twig" with links|first only %}
+    {% endif %}
+  </div>
+</div>

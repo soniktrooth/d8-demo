@@ -1,0 +1,35 @@
+/*
+Table
+
+Tabular data
+
+Markup: table--styleguide.html.twig
+
+Styleguide sod-content.table
+*/
+
+%table {
+  width: 100%;
+
+  thead {
+    background-color: $c__navy;
+    color: $c__white;
+  }
+
+  td,
+  th {
+    padding: 0.5em 1em;
+  }
+
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        background-color: $gray-light;
+      }
+    }
+  }
+}
+
+table {
+  @extend %table;
+}

@@ -1,0 +1,41 @@
+{
+  "name": "@kalamuna/drupal-project",
+  "version": "0.0.1",
+  "license": "GPL-2.0",
+  "private": true,
+  "scripts": {
+    "test": "kalastatic build",
+    "start": "kalastatic start",
+    "predeploy": "npm i && composer install",
+    "deploy": "npm run deploy:gitprep && git add -A && npm run deploy:push",
+    "deploy:gitprep": "rm -f .gitignore && find web -type d -name .git -print0|xargs -0 rm -rf",
+    "deploy:push": "grunt buildcontrol:deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kalamuna/drupal-project.git"
+  },
+  "config": {
+    "deploy": {
+      "pantheon": "ssh://codeserver.dev.47f8ce8d-3350-4d28-b97f-f0c1093a2805@codeserver.dev.47f8ce8d-3350-4d28-b97f-f0c1093a2805.drush.in:2222/~/repository.git",
+      "branch": "master"
+    }
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-build-control": "^0.7.1",
+    "grunt-cli": "^1.2.0",
+    "kalastatic": "github:kalamuna/kalastatic"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "jquery-match-height": "^0.7.2",
+    "jquery-once": "^2.2.0",
+    "kalastatic-twig-filters": "^0.2.0",
+    "kss-bootstrap": "4.1.1",
+    "kstat-kss-builder": "^0.13.4",
+    "twig-drupal-filters": "^0.2.1"
+  }
+}

@@ -1,0 +1,6 @@
+---
+source: node_modules/jquery
+destination: vendor/jquery
+---
+
+Bring in all the jQuery.

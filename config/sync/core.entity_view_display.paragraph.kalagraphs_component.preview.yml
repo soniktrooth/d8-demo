@@ -1,0 +1,36 @@
+uuid: adbaf838-11ba-4d60-badc-b2c4844f2524
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.kalagraphs_component.field_kalagraphs_image
+    - field.field.paragraph.kalagraphs_component.field_kalagraphs_links
+    - field.field.paragraph.kalagraphs_component.field_kalagraphs_subcomponents
+    - field.field.paragraph.kalagraphs_component.field_kalagraphs_subtitle
+    - field.field.paragraph.kalagraphs_component.field_kalagraphs_text
+    - field.field.paragraph.kalagraphs_component.field_kalagraphs_title
+    - field.field.paragraph.kalagraphs_component.field_kalagraphs_type
+    - paragraphs.paragraphs_type.kalagraphs_component
+_core:
+  default_config_hash: XhMka7heQnbHW3gmJqI2fFcy2BTdk71kRXdgovIDk9Y
+id: paragraph.kalagraphs_component.preview
+targetEntityType: paragraph
+bundle: kalagraphs_component
+mode: preview
+content:
+  field_kalagraphs_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_kalagraphs_image: true
+  field_kalagraphs_links: true
+  field_kalagraphs_subcomponents: true
+  field_kalagraphs_subtitle: true
+  field_kalagraphs_text: true
+  field_kalagraphs_type: true

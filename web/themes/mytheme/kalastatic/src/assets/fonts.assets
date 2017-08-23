@@ -1,0 +1,6 @@
+---
+source: web/themes/mytheme/kalastatic/src/fonts
+destination: fonts
+---
+
+Deploy the font files.

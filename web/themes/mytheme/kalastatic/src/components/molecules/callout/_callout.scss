@@ -1,0 +1,42 @@
+/*
+Callout
+
+A callout on the sidebar of a news article.
+
+Markup: callout.html.twig
+
+Styleguide sod-content.callout
+
+*/
+
+%callout {
+
+  margin-top: 1em;
+  max-width: 25rem;
+  font-family: $font-family-serif;
+  padding-bottom: 1em;
+  border-bottom: 1px $gray-darker solid;
+  margin-bottom: 3em;
+  background: desaturate(lighten($c__blue, 60%),35%);
+
+  .callout__wrapper {
+    @extend .clearfix;
+    padding: 1em 1.5em;
+    position: relative;
+  }
+
+  .excerpt,
+  .quote {
+    padding: 0;
+
+    border-left: none;
+    font-size: 1.5em;
+    position: relative;
+    line-height: 1.25;
+  }
+}
+
+.node--news aside .field__item > p,
+.callout {
+  @extend %callout;
+}

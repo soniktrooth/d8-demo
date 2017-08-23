@@ -1,0 +1,33 @@
+%navbar-toggle {
+  margin-top: 2.25em;
+  margin-right: 1em;
+  padding: 0.75em 0.5em;
+  position: absolute;
+  top: 0em;
+  right: 1em;
+  float: none;
+  border: none;
+  border-radius: 0;
+  transition-property: all;
+  transition-timing-function: ease-out;
+  transition-duration: 0.25s;
+  font-size: 0.875em;
+
+  .icon-bar {
+    background-color: $c__blue;
+  }
+
+  &:focus,
+  .open & {
+    background-color: $c__blue;
+    color: #fff;
+
+    .icon-bar {
+      background-color: $c__white;
+    }
+  }
+}
+
+.navbar-toggle {
+  @extend %navbar-toggle;
+}

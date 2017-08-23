@@ -1,0 +1,15 @@
+%layout--8-4 {
+  @extend %layout--wrapper;
+
+  .article {
+    @extend .col-md-8;
+  }
+
+  .aside {
+    @extend .col-md-4;
+  }
+}
+
+.layout--8-4 {
+  @extend %layout--8-4;
+}

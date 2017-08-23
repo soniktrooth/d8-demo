@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * Implements hook_preprocess().
+ */
+function mytheme_preprocess(&$vars) {
+  // Add a global flag in all themes to indicate it is rendering in a Drupal
+  // context.
+  $vars['drupal'] = TRUE;
+}

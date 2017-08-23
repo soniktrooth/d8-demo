@@ -1,4 +1,4 @@
-uuid: 572b9c25-ae3d-4b89-8550-91422d614b1a
+uuid: aff1da8f-9b42-49fd-9313-cf2c317d916d
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - josh@kalamuna.com
+  - admin@example.com
 reply: ''
 weight: 0
 message: 'Your message has been sent.'

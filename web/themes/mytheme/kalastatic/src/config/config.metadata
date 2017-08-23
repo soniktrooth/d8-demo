@@ -1,0 +1,20 @@
+---
+title: "UCSF School of Dentistry"
+description: Teeth are fun!
+
+stylesheets:
+  - 'styles/main.css'
+
+scripts:
+  header:
+    - vendor/jquery/dist/jquery.js
+    - vendor/bootstrap/bootstrap.js
+    - vendor/matchheight/dist/jquery.matchHeight-min.js
+    - vendor/jquery-once/jquery.once.min.js
+
+  footer:
+    - js/drupal_pre.js
+    - js/sod.js
+    - js/drupal_post.js
+
+---

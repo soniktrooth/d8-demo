@@ -1,0 +1,13 @@
+%layout--node-sidebar {
+  @extend %layout--8-4;
+
+  .article {
+    @media (min-width: $screen-md) {
+      padding-right: 5em !important;
+    }
+  }
+}
+
+.layout--node-sidebar {
+  @extend %layout--node-sidebar;
+}

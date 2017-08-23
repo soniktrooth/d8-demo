@@ -1,0 +1,10 @@
+<a href="{{ url }}" class="{{ class|join(" ") }}"
+{% for attribute in attributes %}
+  {{ attribute.name }}="{{ attribute.value }}"
+{% endfor %}
+>
+  {% if "icon" in class %}
+  <i aria-hidden="true" class="icon fa fa-{{ icon }}"></i>
+  {% endif %}
+  <span>{{ text }}</span>
+</a>

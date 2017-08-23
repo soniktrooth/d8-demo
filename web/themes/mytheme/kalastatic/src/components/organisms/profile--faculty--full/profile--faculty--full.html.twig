@@ -1,0 +1,55 @@
+<article class="profile--faculty--full">
+  <div>
+    <div>
+      <aside class="aside">
+        {% if drupal %}
+           {{ image }}
+        {% elseif image is defined %}
+          {% include "@atoms/picture/picture.html.twig" with image only %}
+        {% endif %}
+        {% if programs %}
+          <div class="profile--faculty__programs">
+            <div class="field__label">{{ 'Associated Programs'|t }}</div>
+            {{ programs }}
+          </div>
+        {% endif %}
+      </aside>
+      <div class="article">
+        <div class="profile--faculty__content">
+          <h2><a href="{{ link.href }}">{{ title }}</a></h2>
+          {% if titles %}
+            <div class="profile--faculty__titles">
+              {{ titles }}
+            </div>
+          {% endif %}
+
+          {% if dept %}
+            <div class="profile--faculty__dept">
+              {{ dept }}
+            </div>
+          {% endif %}
+
+          {% if bio %}
+            <div class="profile--faculty__bio">
+              {{ bio }}
+            </div>
+          {% endif %}
+
+          {% if education %}
+            <div class="profile--faculty__education">
+              <div class="field__label">{{ 'Education and Training'|t }}</div>
+              {{ education|raw }}
+            </div>
+          {% endif %}
+
+          {% if awards %}
+            <div class="profile--faculty__awards">
+              <div class="field__label">{{ 'Awards and Honors'|t }}</div>
+              {{ awards|raw }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

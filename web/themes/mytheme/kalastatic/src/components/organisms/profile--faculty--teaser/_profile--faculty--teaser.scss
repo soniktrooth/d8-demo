@@ -1,0 +1,38 @@
+/*
+Faculty Profile teaser
+
+A profile component for displaying faculty.
+
+Markup: profile--faculty--teaser.html.twig
+
+Styleguide sod-content.profile--faculty--teaser
+*/
+
+%profile--faculty--teaser {
+  background-color: #eee;
+
+  img {
+    @extend .img-responsive;
+    width: 100%;
+  }
+
+  .profile--faculty__content {
+    padding: 1em;
+    background-color: #eee;
+
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+.profile--faculty--teaser {
+  @extend %profile--faculty--teaser;
+}
+
+
+#kssref-sod-content-profile--faculty {
+  .profile--faculty {
+    width: 33%;
+  }
+}

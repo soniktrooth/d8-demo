@@ -1,0 +1,44 @@
+<div class="{{ component_name|default('tout--cta') }}">
+
+  {% block tout %}
+
+    <div class="tout__wrapper">
+
+      {% if image %}
+        {% block image %}
+          <div class="image">
+            {% if drupal is defined %}
+              {{ image }}
+            {% else %}
+              {% include '@atoms/image/image.html.twig' with image only %}
+            {% endif %}
+          </div>
+        {% endblock %}
+      {% endif %}
+
+
+      <div class="content__wrapper">
+
+        {% block tout__content %}
+
+          {% if title %}
+            <h3 class="tout__title">{{ title }}</h3>
+          {% endif %}
+
+          {% if text %}
+            <div class="tout__blurb">
+              {{ text }}
+            </div>
+          {% endif %}
+
+          {% if drupal is defined %}
+            {{ links }}
+          {% else %}
+            {% include "@atoms/link--icon/link--icon.html.twig" with links|first only %}
+          {% endif %}
+
+        {% endblock %}
+      </div>
+    </div>
+  {% endblock %}
+</div>

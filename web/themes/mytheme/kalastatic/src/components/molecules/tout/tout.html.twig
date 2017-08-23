@@ -1,0 +1,27 @@
+{% extends '@organisms/section/section.html.twig' %}
+
+{% block section_content %}
+  {% if image %}
+    {% include '@atoms/image/image.html.twig' with image only %}
+  {% endif %}
+
+  {% if title %}
+    <h3>{{ title }}</h3>
+  {% endif %}
+
+  {% if text %}
+    {{ text }}
+  {% endif %}
+
+  {% if links %}
+    <div class="tout__cta">
+      {% if drupal %}
+        {{ links }}
+      {% else %}
+        {% for link in links %}
+          {% include '@atoms/link/link.html.twig' with link only %}
+        {% endfor %}
+      {% endif %}
+    </div>
+  {% endif %}
+{% endblock %}

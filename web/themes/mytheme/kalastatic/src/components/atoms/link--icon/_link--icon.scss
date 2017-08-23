@@ -1,0 +1,54 @@
+/*
+
+Link Icon
+
+A link with a little icon
+
+Markup: link--icon.html.twig
+*/
+
+%link--icon {
+
+  display: inline-block;
+  width: auto;
+  min-width: 0;
+  color: $c__white;
+  margin-top: 1em;
+  text-decoration: none;
+  transition-property: color;
+
+  span {
+    display: inline-block;
+    margin-right: 0.325em;
+    @extend b;
+  }
+
+  .icon {
+
+    width: 24px !important;
+    height: 24px !important;
+    float: right;
+    position: relative;
+    transition-duration: 0.175s;
+    transition-property: left;
+    left: 0;
+    transition-timing-function: ease-out;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    text-decoration: none;
+    color: $c__white;
+
+    .icon {
+      left: 0.425em;
+    }
+  }
+
+}
+
+.link--icon {
+  @extend %link--icon;
+}

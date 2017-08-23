@@ -1,0 +1,27 @@
+/**
+ * Secondary navigation
+ *
+ * Secondary navigation for UCSF School of Dentistry.
+ *
+ * Markup: nav--secondary.html.twig
+ *
+ * Styleguide: sod-ui.nav--secondary
+ */
+
+%nav--secondary {
+  @extend .nav;
+  @extend .navbar-nav;
+
+  > li {
+    margin: 0 0 0 1em;
+
+    > a {
+      @extend %nav__item;
+      color: $gray-dark !important;
+    }
+  }
+}
+
+#nav--secondary {
+  @extend %nav--secondary;
+}

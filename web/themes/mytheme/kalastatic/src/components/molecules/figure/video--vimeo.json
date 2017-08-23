@@ -1,0 +1,12 @@
+{
+  "vid": "UUIDXXX",
+  "height": "550",
+  "src": {
+    "type": "vimeo",
+    "uri": "https://vimeo.com/80883637"
+  },
+  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.",
+  "attribution": {
+    "text": "Production credits go here, right now it's just a bit chunk, we can make it more structured (unordered list if desired)"
+  }
+}

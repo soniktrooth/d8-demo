@@ -1,0 +1,122 @@
+/**
+ * Header search
+ *
+ * Search for UCSF School of Dentistry.
+ *
+ * Markup: header__search.html.twig
+ *
+ * Styleguide: sod-ui.header__search
+ */
+
+%header__search {
+  @extend .clearfix;
+  position: relative;
+
+  @media(min-width: $screen-sm) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  @media(min-width: $screen-md) {
+    margin-right: 0;
+  }
+
+  form {
+    background-color: $c__white;
+
+    @media(min-width: $screen-sm) {
+      opacity: 0;
+      display: none;
+      width: 500px;
+      position: absolute;
+      top: -54px;
+      right: 30px;
+      transition: all 0.3s ease-in-out;
+      transform: translateY(0);
+      z-index: 1;
+
+      &.show {
+        opacity: 1;
+        transform: translateY(50px);
+
+        @media(min-width: $screen-lg) {
+          transform: translateY(40px);
+        }
+      }
+    }
+
+    @media(min-width: $screen-lg) {
+      top: -44px;
+    }
+  }
+
+  .search-toggle {
+    display: none;
+    position: relative;
+    top: 0.125em;
+
+    @media(min-width: $screen-sm) {
+      display: block;
+    }
+  }
+
+  .form-type-search {
+    width: 100%;
+  }
+
+  .form-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+  }
+
+  h2,
+  label {
+    @extend .sr-only;
+  }
+
+  input {
+    font-size: 14px;
+
+    &[type='search'],
+    &[type='submit'] {
+      @extend .form-control;
+      padding: 0.5em 1em;
+    }
+
+    &[type='submit'] {
+      margin-top: 0;
+      padding: 7px;
+      width: 100%;
+      @extend %button;
+      min-width: 0;
+      color: $c__navy;
+      border: 1px $c__navy solid;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $c__blue;
+        color: $c__white;
+      }
+    }
+  }
+}
+
+#header .search-block-form,
+#kssref-sod-ui-header__search .search-block-form {
+  @extend %header__search;
+}
+
+// Needs some tweaking in the styleguide to look right.
+#kssref-sod-ui-header__search #block-mytheme-search {
+  #search-block-form {
+    opacity: 1;
+    position: static;
+  }
+
+  .search-toggle {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+uuid: 01d16f21-9bac-4b8e-85e1-5951df8bfdfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.josh_page.field_josh_components
+    - node.type.josh_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.josh_page.default
+targetEntityType: node
+bundle: josh_page
+mode: default
+content:
+  field_josh_components:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

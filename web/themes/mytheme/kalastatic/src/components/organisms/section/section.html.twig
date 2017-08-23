@@ -1,0 +1,9 @@
+<section {% if cols %}class="layout--{{ cols }}-up"{% endif %}>
+  <div class="{% if container %}container {% endif %}">
+    <div>
+      {% block section_content %}
+        {{ content }}
+      {% endblock %}
+    </div>
+  </div>
+</section>

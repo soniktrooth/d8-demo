@@ -1,0 +1,84 @@
+/*
+UCSF Interactive Palette
+
+The UCSF color palette reinforces a sense of strength and energy for all communications. The palette is flexible and made of bold, bright colors that create dynamic, expressive communications. Ample use of white space unifies the palette with contrast and vibrancy. By developing one enterprise-wide color palette, we present a more unified brand to our audiences. Each color was carefully selected to express the personality of our enterprise. All palette colors are evolved from familiar UCSF legacy colors, and designed to be used across all communication channels.
+
+The interactive color formulas provide five additional darker versions of UCSF’s color palette to meet required contrast ratios. All other specifications for UCSF brand colors, tints and neutrals remain unchanged. All of the colors and tints shown here conform to the WCAG AA level contrast standard, which requires that the color combination meets a minimum contrast ratio.
+
+Styleguide sodcolors
+
+*/
+
+/*
+
+UCSF Primary Interactive Palette
+
+Primary brand colors
+
+$c__navy - #050249
+$c__teal - #058488
+$c__green - #6ea400
+$c__blue - #007cbe
+$c__orange - #f26d04
+
+Styleguide sodcolors.01-color-swatches-primary
+
+*/
+
+$c__navy: #050249;
+$c__teal: #058488;
+$c__green: #6ea400;
+$c__blue: #007cbe;
+$c__orange: #f26d04;
+
+
+/*
+
+UCSF Secondary Interactive Palette
+
+The interactive color formulas provide five additional darker versions of UCSF’s color palette to meet required contrast ratios. All other specifications for UCSF brand colors, tints and neutrals remain unchanged. All of the colors and tints shown here conform to the WCAG AA level contrast standard, which requires that the color combination meets a minimum contrast ratio.
+
+$c__purple - #716fb2
+$c__red - #eb093c
+$c__yellow - #ffdd00
+
+Styleguide sodcolors.02-color-swatches-secondary
+
+*/
+
+$c__purple: #716fb2;
+$c__red: #eb093c;
+$c__yellow: #ffdd00;
+
+
+/*
+
+UCSF Neutral Interactive Palette
+
+Neutrals go with anything
+
+$c__white - #fff
+$c__black - #000
+$gary-light - #d1d3d3
+$gray-mid - #b3b9bf
+$gray-dark: #4d4d4d
+$gray-darker: #222;
+Styleguide sodcolors.03-color-swatches-neutral
+
+*/
+
+$c__black: #000;
+$c__white: #fff;
+$gray-light: #eee;
+$gray-mid: #b3b9bf;
+$gray-dark: #4d4d4d;
+
+
+
+
+
+$brand-primary: $c__teal;
+$brand-secondary: $c__navy;
+
+
+$navbar-default-link-color: $c__navy;

@@ -1,0 +1,12 @@
+{
+  "title": "The Long and Winding Road",
+  "text": "Dr. Jeffory Eaton '83 acknowledged his Medal of Honor with a rendition of 'The Long and Winding Road.'",
+  "image": {
+    "uri": "http://dentistry.ucsf.edu/sites/default/files/banquet17_eaton.jpg"
+  },
+  "links": [{
+    "text": "Read more",
+    "url": "http://go.gl",
+    "class": ["link--icon"]
+  }]
+}

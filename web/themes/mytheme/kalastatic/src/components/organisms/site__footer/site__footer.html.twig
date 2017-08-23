@@ -1,0 +1,19 @@
+<footer id="footer">
+  <div>
+    <div>
+      {% if drupal is defined %}
+        {{ elements.mytheme_footer}}
+      {% else %}
+        {% include '@molecules/nav--footer/nav--footer.html.twig' with navigation.footer %}
+      {% endif %}
+    </div>
+    <div>
+      <ul class="subfooter">
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </div>
+    <div class="copyright">© 2017 The Regents of the University of California</div>
+  </div>
+</footer>

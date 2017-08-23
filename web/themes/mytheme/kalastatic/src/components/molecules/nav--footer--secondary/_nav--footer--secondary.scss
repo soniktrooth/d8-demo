@@ -1,0 +1,52 @@
+/**
+ * Footer navigation
+ *
+ * Footer navigation for UCSF School of Dentistry.
+ *
+ * Markup: nav--footer.html.twig
+ *
+ * Styleguide: sod-ui.nav--footer
+ */
+
+%nav--footer {
+
+  @extend .clearfix;
+  padding: 3em 0;
+
+  ul {
+    @extend .col-xs-12;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 0.925em;
+    font-weight: 300;
+
+
+    li {
+      float: none;
+      flex-basis: 100%;
+      list-style: none;
+
+      @media(min-width: $screen-sm) {
+        flex-basis: 24%;
+      }
+
+      a {
+        display: block;
+        margin-bottom: 1em;
+        font-weight: 300;
+      }
+    }
+  }
+
+  p {
+    clear: both;
+  }
+}
+
+#nav--footer {
+  @extend %nav--footer;
+}

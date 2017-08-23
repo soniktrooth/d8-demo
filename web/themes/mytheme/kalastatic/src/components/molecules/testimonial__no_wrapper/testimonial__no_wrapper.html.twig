@@ -1,0 +1,17 @@
+<aside class="testimonial">
+  <div class="callout__wrapper">
+    <div class="testimonial__content">
+      <blockquote class="quote">
+        {{ text }}
+      </blockquote>
+      <div class="attribution">{{ attribution }}</div>
+    </div>
+    {% if image is defined %}
+      {% if drupal %}
+        {{ image }}
+      {% else %}
+        {% include "@atoms/picture/picture.html.twig" with image only %}
+      {% endif %}
+    {% endif %}
+  </div>
+</aside>

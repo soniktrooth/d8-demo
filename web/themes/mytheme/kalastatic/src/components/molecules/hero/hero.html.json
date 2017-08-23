@@ -1,0 +1,16 @@
+{
+  "title": "This is a hero",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+  "subtitle": "This is a subhead",
+  "picture": {
+    "uri": "http://placekitten.com/900/650",
+    "width": "450",
+    "height": "325",
+    "alt": "this is some alt text"
+  },
+  "links": [{
+    "class": ["button"],
+    "url": "#",
+    "text": "Call to Action"
+  }]
+}

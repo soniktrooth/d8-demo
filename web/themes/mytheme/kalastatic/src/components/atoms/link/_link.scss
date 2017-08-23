@@ -1,0 +1,17 @@
+a {
+  .fa {
+    margin-right: 0.5em;
+  }
+}
+
+%link--hover-pill {
+  text-decoration: none;
+  padding: 0.125em 0.5em 0.25em 0.5em;
+  border-radius: 0.125em;
+  display: inline-block;
+
+  &:hover {
+    background-color: $gray-light;
+    text-decoration: underline
+  }
+}

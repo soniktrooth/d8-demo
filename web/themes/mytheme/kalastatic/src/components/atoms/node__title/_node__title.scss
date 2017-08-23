@@ -1,0 +1,18 @@
+/*
+Node Title
+
+Title element for nodes / articles / stories
+
+Markup: node__title.html.twig
+
+Styleguide sod-content.node__title
+*/
+
+%node__title {
+  position: relative;
+  max-width: 55em;
+}
+
+.node__title {
+  @extend %node__title;
+}

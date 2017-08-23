@@ -1,0 +1,9 @@
+%search {
+  .views-row {
+    @extend %search-item;
+  }
+}
+
+.view-search {
+  @extend %search;
+}

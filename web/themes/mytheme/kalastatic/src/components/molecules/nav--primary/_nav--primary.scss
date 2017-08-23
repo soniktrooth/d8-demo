@@ -1,0 +1,30 @@
+/**
+ * Primary navigation
+ *
+ * Main navigation for UCSF School of Dentistry.
+ *
+ * Markup: nav--primary.html.twig
+ *
+ * Styleguide: sod-ui.nav--primary
+ */
+
+%nav--primary {
+
+  @extend .nav;
+  @extend .navbar-nav;
+
+  > li {
+
+    margin: 0 0 0 1em;
+
+    > a {
+
+      @extend %nav__item;
+    }
+  }
+}
+
+#nav--primary {
+
+  @extend %nav--primary;
+}

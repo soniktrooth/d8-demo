@@ -10,8 +10,8 @@ base theme: bartik
 libraries:
   - core/jquery
   - core/drupal
-  - enamel/styles
-  - enamel/scripts
+  - mytheme/styles
+  - mytheme/scripts
 
 # Regions
 regions:

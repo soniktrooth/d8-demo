@@ -1,0 +1,10 @@
+<figure class="article__image {{ class|join(" ") }}">
+  {% if drupal is defined %}
+    {{ image }}
+  {% else %}
+    {% include "@atoms/picture/picture.html.twig" with picture only %}
+  {% endif %}
+  <figcaption>
+    {{ text }}
+  </figcaptions>
+</figure>

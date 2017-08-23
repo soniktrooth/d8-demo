@@ -1,0 +1,68 @@
+/*
+Taxonomy Term
+
+A  taxonomy term
+
+Markup: taxonomy__term.html.twig
+
+Styleguide sod-content.taxonomy__term
+*/
+%taxonomy__term--active {
+  background-color: $c__white;
+  border: 1px solid $c__teal;
+  color: $c__teal;
+}
+
+%taxonomy__term {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  line-height: 2;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: white;
+  background-color: $c__teal;
+  letter-spacing: 0.150em;
+  border-radius: 0;
+  margin-bottom: 0.25em;
+  border: 1px solid transparent;
+
+  a {
+    color: white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+    }
+  }
+
+  &.news {
+    background-color: $gray-mid;
+  }
+
+  &.research {
+    background-color: $c__teal;
+  }
+
+  &.campus-news,
+  &.honors-amp-awards,
+  &.announcements,
+  &.happenings,
+  &.spotlight {
+    background-color: #283f62;
+  }
+
+  &.patient-care {
+    background-color: $c__blue;
+  }
+
+  &.education {
+    background-color: $c__green;
+  }
+}
+
+.taxonomy__term {
+  @extend %taxonomy__term;
+}

@@ -1,0 +1,27 @@
+<header id="header" role="banner">
+  <nav class="navbar navbar-default">
+    <div class="nav__container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        {% include '@atoms/logo/logo.html.twig' %}
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navigation">
+        {% include '@molecules/header__search/header__search.html.twig' %}
+        {% if drupal is defined %}
+          {{ elements.secondarynavigation }}
+          {{ elements.mytheme_main_menu }}
+        {% else %}
+        {% endif %}
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+</header>

@@ -1,0 +1,74 @@
+/**
+ * Tout
+ *
+ * A tout for touting.
+ *
+ * Markup: tout.html.twig
+ *
+ * Styleguide: sod-content.tout
+ */
+
+%tout {
+
+  margin-bottom: 2em;
+  color: $c__white;
+
+  .tout__wrapper {
+    background-color: $brand_primary;
+  }
+
+  h2,
+  h3 {
+   margin-top: 0;
+   margin-bottom: 0.5em;
+   font-weight: normal;
+ }
+
+  .label {
+   font-size: 1em;
+   display: block;
+   text-align: left;
+   padding: 0;
+   margin-bottom: 0.25em;
+  }
+
+  .button {
+
+    display: inline-block !important;
+    background-color: transparent;
+    color: $c__blue;
+    min-width: 0;
+
+    &:hover {
+      border-color: $c__white;
+      color: $c__teal !important;
+      background-color: $c__white !important;
+    }
+  }
+
+
+  .content {
+    padding: 3rem 2rem;
+  }
+}
+
+
+%tout--alt-color {
+
+  .btn {
+
+    background-color: transparent;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $c__navy;
+      border-color: $c__white;
+      background-color: $c__white;
+    }
+  }
+}
+
+.tout {
+ @extend %tout;
+}

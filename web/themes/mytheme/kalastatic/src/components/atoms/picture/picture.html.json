@@ -1,0 +1,48 @@
+{
+  "uri": "/kalastatic/images/UCSF_20160127_Community Dental Clinic_010.jpg",
+  "width": "450",
+  "height": "325",
+  "alt": "this is some alt text",
+  "srcset": {
+    "(max-width: 479px)": {
+      "1x": [
+        "/kalastatic/images/UCSF_20160127_Community Dental Clinic_010.jpg"
+      ],
+      "2x": [
+        "/kalastatic/images/UCSF_20160127_Community Dental Clinic_010.jpg"
+      ]
+    },
+    "(min-width: 480px) and (max-width: 767px)": {
+      "1x": [
+        "/kalastatic/images/UCSF_20160127_Community Dental Clinic_010.jpg"
+      ],
+      "2x": [
+        "/kalastatic/images/UCSF_20160127_Community Dental Clinic_010.jpg"
+      ]
+    },
+    "(min-width: 768px) and (max-width: 991px)": {
+      "1x": [
+        "/kalastatic/images/UCSF_20160127_Community Dental Clinic_010.jpg"
+      ],
+      "2x": [
+        "/kalastatic/images/UCSF_20160127_Community Dental Clinic_010.jpg"
+      ]
+    },
+    "(min-width: 992px) and (max-width: 1199px)": {
+      "1x": [
+        "/kalastatic/images/UCSF_20160127_Community Dental Clinic_010.jpg"
+      ],
+      "2x": [
+        "/kalastatic/images/UCSF_20160127_Community Dental Clinic_010.jpg"
+      ]
+    },
+    "(min-width: 1200px)": {
+      "1x": [
+        "/kalastatic/images/UCSF_20160127_Community Dental Clinic_010.jpg"
+      ],
+      "2x": [
+        "/kalastatic/images/UCSF_20160127_Community Dental Clinic_010.jpg"
+      ]
+    }
+  }
+}

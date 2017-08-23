@@ -1,0 +1,11 @@
+<section class="layout--{{ layout_class }}">
+  <div>
+    <div>
+      {% block layout_content %}
+        {% for subcomponent in subcomponents %}
+          {{ subcomponent }}
+        {% endfor %}
+      {% endblock %}
+    </div>
+  </div>
+</section>

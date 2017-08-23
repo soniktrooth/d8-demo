@@ -1,0 +1,16 @@
+%layout--2-up {
+  @extend %layout--wrapper;
+
+  > div {
+    > div {
+      > * {
+        @extend .col-xs-12;
+        @extend .col-sm-6;
+      }
+    }
+  }
+}
+
+.layout--2-up {
+  @extend %layout--2-up;
+}

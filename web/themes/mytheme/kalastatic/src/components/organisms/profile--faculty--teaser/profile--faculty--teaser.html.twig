@@ -1,0 +1,18 @@
+<article class="profile--faculty--teaser">
+  {% if image %}
+    {% if drupal %}
+      {{ image }}
+    {% else %}
+      {% include "@atoms/picture/picture.html.twig" with image only %}
+    {% endif %}
+  {% endif %}
+  <div class="profile--faculty__content">
+    <h3><a href="{{ link.href }}">{{ title }} {{ first_name }} {{ last_name }}</a></h3>
+    <div class="profile--faculty__titles">
+      {{ titles }}
+    </div>
+    <div class="profile--faculty__dept">
+      {{ dept }}
+    </div>
+  </div>
+</article>

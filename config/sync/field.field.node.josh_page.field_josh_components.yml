@@ -1,0 +1,31 @@
+uuid: 1c66e0c4-6f3c-42c6-a827-d62402c761f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_josh_components
+    - node.type.josh_page
+  module:
+    - entity_reference_revisions
+id: node.josh_page.field_josh_components
+field_name: field_josh_components
+entity_type: node
+bundle: josh_page
+label: Components
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    target_bundles_drag_drop:
+      kalagraphs_component:
+        weight: 3
+        enabled: false
+      kalagraphs_subcomponent:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,68 @@
+/**
+ * Header
+ *
+ * The footer of the site.
+ *
+ * Markup: site__header.html.twig
+ *
+ * Styleguide: sod-ui.site__header
+ */
+
+%site__header {
+  .nav__container {
+    @extend .clearfix;
+    overflow: hidden;
+    max-width: $screen-lg;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    @media (min-width: $screen-lg) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .navbar-default {
+    border: none;
+    border-radius: 0;
+    background-color: $c__white !important;
+  }
+
+  @media(min-width: $screen-md) {
+    .navbar-collapse {
+      padding-right: 0;
+    }
+  }
+
+  #navigation {
+    ul:first-of-type {
+      margin-top: 1.75rem;
+
+      + ul {
+        margin-top: 0.5rem;
+      }
+    }
+
+    @media(min-width: $screen-sm) {
+      > ul,
+      > .search-block-form {
+        float: right;
+      }
+    }
+  }
+
+}
+
+#header {
+  @extend %site__header;
+
+  #logo {
+    margin-top: 3.5rem !important;;
+  }
+}
+
+#header .search-block-form,
+#kssref-sod-ui-header__search .search-block-form {
+  margin-top: 1.92rem;
+}

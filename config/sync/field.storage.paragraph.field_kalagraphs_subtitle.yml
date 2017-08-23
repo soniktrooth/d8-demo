@@ -1,0 +1,23 @@
+uuid: cdf9b20c-4e1a-4cd1-bc9d-5759eac2337a
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 7iq6zj8nQap2Hf4wx6CRp4Hv1-TQYTz1T20m9zh8clg
+id: paragraph.field_kalagraphs_subtitle
+field_name: field_kalagraphs_subtitle
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
