@@ -178,7 +178,7 @@ function josh_paragraphs_preprocess_paragraph__kalagraphs_component__default(&$v
 /**
  * Implements hook_preprocess_hook() for image().
  */
-function sod_paragraphs_preprocess_image(&$vars) {
+function josh_paragraphs_preprocess_image(&$vars) {
   // Manually set the width and height from the attributes array because our
   // image template can't handle an attributes array just yet.
   $vars['width'] = $vars['attributes']['width'];

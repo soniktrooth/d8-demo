@@ -1,29 +1,29 @@
 /**
  * @file
- * JS for SOD.
+ * JS for josh.
  */
 
-(function (Drupal, sod, $, window) {
+(function (Drupal, josh, $, window) {
   'use strict';
-  Drupal.behaviors.sod = {
+  Drupal.behaviors.josh = {
     attach: function (context, settings) {
       $(window).on('resize', function () {
-        sod.matchHeights();
-        sod.flipMenu();
-        sod.searchEnable(context);
+        josh.matchHeights();
+        josh.flipMenu();
+        josh.searchEnable(context);
       });
 
-      sod.replaceLinkIconsWithInlineSVG();
-      sod.matchHeights();
-      sod.searchEnable(context);
-      sod.searchToggle(context);
-      sod.flipMenu();
-      sod.profileTeaser(context);
-      sod.searchSubmitAction();
+      josh.replaceLinkIconsWithInlineSVG();
+      josh.matchHeights();
+      josh.searchEnable(context);
+      josh.searchToggle(context);
+      josh.flipMenu();
+      josh.profileTeaser(context);
+      josh.searchSubmitAction();
     }
   };
 
-  sod.profileTeaser = function (context) {
+  josh.profileTeaser = function (context) {
     // Vist the associated url when clicking on the image but keep our anchors
     // clean.
     $('.profile--faculty--teaser', context).once('profile--faculty--teaser').each(function () {
@@ -36,7 +36,7 @@
     });
   };
 
-  sod.flipMenu = function () {
+  josh.flipMenu = function () {
     var navPrimary = $('#nav--primary');
     var navSecondary = $('#nav--secondary');
     if (window.matchMedia('(max-width: 767px)').matches) {
@@ -49,7 +49,7 @@
     }
   };
 
-  sod.matchHeights = function () {
+  josh.matchHeights = function () {
     var touts = $('.tout--cta');
     if (touts.length > 1) {
       touts.find('.tout__title').matchHeight();
@@ -73,7 +73,7 @@
     }
   };
 
-  sod.replaceLinkIconsWithInlineSVG = function () {
+  josh.replaceLinkIconsWithInlineSVG = function () {
     // Replaces the svgs in the img tag with actual embedded svg,this allows us
     // to use css to style them e.g.for rollovers.
     jQuery('.link--icon .icon').each(function () {
@@ -104,7 +104,7 @@
     });
   };
 
-  sod.searchSubmitAction = function () {
+  josh.searchSubmitAction = function () {
     $('.search-block-form form').submit(function (e) {
       e.preventDefault();
       var keys = $('.form-search').val();
@@ -113,7 +113,7 @@
     });
   };
 
-  sod.searchEnable = function (context) {
+  josh.searchEnable = function (context) {
     // We need to disable the search form elements on desktop initially but not
     // on mobile. This prevents disappearing focus on tabbing.
     var searchForm = $('[id ^= "search-block-form"]', context);
@@ -128,7 +128,7 @@
     }
   };
 
-  sod.searchToggle = function (context) {
+  josh.searchToggle = function (context) {
     var searchForm = $('[id ^= "search-block-form"]', context);
     var input = searchForm.find('input.form-search');
     var button = searchForm.find('input.form-submit');
@@ -164,4 +164,4 @@
     });
   };
 
-}(Drupal, window.sod = window.sod || {}, window.jQuery, window));
+}(Drupal, window.josh = window.josh || {}, window.jQuery, window));

@@ -5,7 +5,7 @@ A student testimonial
 
 Markup: testimonial.html.twig
 
-Styleguide sod-content.testimonial
+Styleguide josh-content.testimonial
 
 */
 
@@ -21,6 +21,12 @@ Styleguide sod-content.testimonial
   .quote {
     margin-bottom: 0;
     padding: 1em 1.125em 0.75em 1.125em;
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      content: ' ';
+    }
 
     p {
       position: relative;

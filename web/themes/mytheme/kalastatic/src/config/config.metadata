@@ -1,6 +1,6 @@
 ---
-title: "UCSF School of Dentistry"
-description: Teeth are fun!
+title: "Josh's site"
+description: I like things
 
 stylesheets:
   - 'styles/main.css'
@@ -14,7 +14,7 @@ scripts:
 
   footer:
     - js/drupal_pre.js
-    - js/sod.js
+    - js/main.js
     - js/drupal_post.js
 
 ---

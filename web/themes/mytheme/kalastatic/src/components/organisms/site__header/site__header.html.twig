@@ -17,9 +17,10 @@
       <div class="collapse navbar-collapse" id="navigation">
         {% include '@molecules/header__search/header__search.html.twig' %}
         {% if drupal is defined %}
-          {{ elements.secondarynavigation }}
           {{ elements.mytheme_main_menu }}
         {% else %}
+          {% include "@molecules/nav--secondary/nav--secondary.html.twig" with navigation.secondary %}
+          {% include "@molecules/nav--primary/nav--primary.html.twig" with navigation.primary %}
         {% endif %}
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container -->

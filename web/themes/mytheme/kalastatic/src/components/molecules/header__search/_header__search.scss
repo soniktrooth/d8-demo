@@ -1,11 +1,11 @@
 /**
  * Header search
  *
- * Search for UCSF School of Dentistry.
+ * Search my site.
  *
  * Markup: header__search.html.twig
  *
- * Styleguide: sod-ui.header__search
+ * Styleguide: josh-ui.header__search
  */
 
 %header__search {
@@ -105,12 +105,12 @@
 }
 
 #header .search-block-form,
-#kssref-sod-ui-header__search .search-block-form {
+#kssref-josh-ui-header__search .search-block-form {
   @extend %header__search;
 }
 
 // Needs some tweaking in the styleguide to look right.
-#kssref-sod-ui-header__search #block-mytheme-search {
+#kssref-josh-ui-header__search #block-mytheme-search {
   #search-block-form {
     opacity: 1;
     position: static;

@@ -5,11 +5,12 @@
  *
  * Markup: tout--cta.html.twig
  *
- * Styleguide: sod-content.tout--cta
+ * Styleguide: josh-content.tout--cta
  */
 
 %tout--cta {
   @extend %tout;
+  @extend .col-sm-4;
 
   .tout__wrapper {
     background-color: $c__blue;
@@ -17,7 +18,6 @@
 
   .tout__title {
     font-family: "Helvetica Neue LT W01_41488878" !important;
-    font-size: 1.25em;
   }
 
   .content__wrapper {

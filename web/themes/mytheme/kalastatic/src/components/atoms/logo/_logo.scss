@@ -1,27 +1,23 @@
 /*
 Logo
 
-UCSF Dental Center logo.
+This is my Logo.
 
 Markup: logo.html.twig
 
-Styleguide sod-ui.logo
+Styleguide josh-ui.logo
 */
 
 %logo {
-
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-
-
-  margin-top: 32px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 22px;
 
   h1 {
     margin-top: 0;
   }
 
   a {
-
     display: block;
 
     span {

@@ -8,3 +8,23 @@ function mytheme_preprocess(&$vars) {
   // context.
   $vars['drupal'] = TRUE;
 }
+
+/**
+ * Implements hook_preprocess_HOOK() for menu().
+ */
+function mytheme_preprocess_menu(&$vars) {
+  // Adding ids to the menu wrappers.
+  switch ($vars['menu_name']) {
+    case 'main':
+      $id = 'nav--primary';
+      break;
+
+    case 'secondary':
+      $id = 'nav--secondary';
+      break;
+  }
+
+  if (isset($id)) {
+    $vars['attributes']['id'] = $id;
+  }
+}

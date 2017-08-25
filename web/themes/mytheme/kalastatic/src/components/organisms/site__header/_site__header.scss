@@ -5,7 +5,7 @@
  *
  * Markup: site__header.html.twig
  *
- * Styleguide: sod-ui.site__header
+ * Styleguide: josh-ui.site__header
  */
 
 %site__header {
@@ -16,6 +16,7 @@
     margin: 0 auto;
     padding-left: 1em;
     padding-right: 1em;
+    background-color: #eee;
 
     @media (min-width: $screen-lg) {
       padding-left: 0;
@@ -58,11 +59,11 @@
   @extend %site__header;
 
   #logo {
-    margin-top: 3.5rem !important;;
+    //margin-top: 3.5rem !important;;
   }
 }
 
 #header .search-block-form,
-#kssref-sod-ui-header__search .search-block-form {
-  margin-top: 1.92rem;
+#kssref-josh-ui-header__search .search-block-form {
+  margin-top: 2.6rem;
 }

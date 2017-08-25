@@ -2,7 +2,7 @@
   // All pages EXCEPT these node pages will get a container around them. For
   // future node pages that utilize components and need full width, add them to
   // this 'not' list.
-  $node-types: 'sod-page', 'sod-news';
+  $node-types: 'josh-page', 'josh-news';
   $nots: '';
   @each $type in $node-types {
     $nots: '#{$nots}:not(.page-node-type-#{$type})';
